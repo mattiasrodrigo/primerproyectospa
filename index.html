@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicio</title>
-    <link rel="stylesheet" href="css/estilo.css">
+   
     <link rel="shortcut icon" href="img/candle-spa-blue-free-vector.jpg" type="image/x-icon">
-
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilo.css">
 
 
 
@@ -18,23 +20,24 @@
     <header>
         <div>
 
-        <nav>
-
-            <ul class="menu">
-              
-
-                    <li><a href="index.html">inicio</a></li>
-                    <li><a href="html/multimedia.html">multimedia</a></li>
-                    <li><a href="html/quienessomos.html">quienes somos</a></li>
-                    <li><a href="html/ubicacion.html">ubicacion</a></li>
-                    <li><a href="html/contacto.html">contacto</a></li>
-                
-
-
-
-            </ul>
-
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.htlm">Home</a>
+            <a class="nav-link" href="html/multimedia.html">multimedia</a>
+            <a class="nav-link" href="html/quienessomos.html">quienes somos</a>
+            <a class="nav-link" href="html/ubicacion.html">ubicacion</a>
+            <a class="nav-link" href="html/contacto.html">contacto</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
         </div>
 
         <h1>Spa Googvibes</h1>
@@ -43,7 +46,7 @@
         <section>
         <p>Es un dia para dejar el stress a un lado, es un dia exclusivo para vos.
             Disfruta de todos nuestros mejores servicios. </p>
-        <img class="foto" src="img/depositphotos_53800445-stock-photo-young-female-lying-in-spa.jpg"
+        <img  class="foto img-fluid" src="img/depositphotos_53800445-stock-photo-young-female-lying-in-spa.jpg" 
             alt=" Mujer con piedras calientes">
             </section>
             <section>
@@ -62,13 +65,13 @@
         </div>
         </section>
         <section>
-            <div class="gridpadre">
-            <div class="gridhijo"> <img src="img/descarga3.jfif" alt="imagen"></div>
-            <div class="gridhijo"> <img src="img/descarga 4.jfif" alt="imagen"></div>
-            <div class="gridhijo"> <img src="img/descarga 5.jfif" alt="imagen"></div>
-            <div class="gridhijo"> <img src="img/descarga 6.jpg" alt="imagen"></div>
-            <div class="gridhijo"> <img src="img/descarga 7.jfif" alt="imagen"></div>
-            <div class="gridhijo"> <img src="img/deacarga 8.jpg" alt="imagen"></div>
+            <div class="gridpadre row">
+            <div class="gridhijo col-xl-3 col-md-6 col-sm-12"> <img  src="img/descarga3.jfif" alt="imagen"></div>
+            <div class="gridhijo col-xl-3 col-md-6 col-sm-12"> <img  src="img/descarga 4.jfif" alt="imagen"></div>
+            <div class="gridhijo col-xl-3 col-md-6 col-sm-12"> <img  src="img/descarga 5.jfif" alt="imagen"></div>
+            <div class="gridhijo col-xl-3 col-md-6 col-sm-12"> <img  src="img/descarga 6.jpg" alt="imagen"></div>
+            <div class="gridhijo col-xl-3 col-md-6 col-sm-12"> <img  src="img/descarga 7.jfif" alt="imagen"></div>
+            <div class="gridhijo col-xl-3 col-md-6 col-sm-12"> <img  src="img/deacarga 8.jpg" alt="imagen"></div>
             </div>
         </section>
    
@@ -79,6 +82,8 @@
     <footer>
         <h3>Sitio web creado por Matias Bertone - Todos los derechos reservados.</h3>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -64,14 +64,7 @@ footer {
   text-align: center;
 }
 
-.gridpadre {
-  display: grid;
-  margin: 2rem;
-  padding:2rem;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 220px 220px;
-  row-gap: 20px;
-}
+
  .gridhijo img{
   display: flex;
   padding: 1rem;
@@ -84,7 +77,7 @@ footer {
   height: 200px;
   width: 200px;
   top: 50px;
-  transition:all 0.5s;
+  transition:all 2s;
   background-position-x: cente
   ;
 }
