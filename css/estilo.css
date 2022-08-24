@@ -13,6 +13,12 @@ header {
   padding: 25px;
 }
 
+.navbar {background-color: transparent;}
+
+  .nav-link { display: flex;
+  ;
+width: 200px;}
+
 nav a {
   padding-right: 80px;
   margin: -10px;
