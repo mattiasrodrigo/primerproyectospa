@@ -10,15 +10,19 @@ body {
 header {
   background-image: url(../img/relaxing-tropical-beach-white-sand-stack-stones-background-banner-relaxing-tropical-beach-white-181543784.jpg);
   background-size: cover;
-  padding: 25px
-  ;height: 200px;
+  padding: 25px;
+  height: 200px;
 }
 
-.navbar {background-color: transparent;}
+.navbar {
+  background-color: transparent;
+}
 
-  .nav-link { display: flex;
+.nav-link {
+  display: flex;
   ;
-width: 200px;}
+  width: 200px;
+}
 
 nav a {
   padding-right: 80px;
@@ -72,21 +76,20 @@ footer {
 }
 
 
- .gridhijo img{
+.gridhijo img {
   display: flex;
   padding: 1rem;
   justify-items: center;
   justify-content: center;
-  
+
 }
 
-.gridpadre .gridhijo :hover{
+.gridpadre .gridhijo :hover {
   height: 200px;
   width: 150px;
   top: 50px;
-  transition:all 2s;
-  background-position-x: cente
-  ;
+  transition: all 2s;
+  background-position-x: cente;
 }
 
 .gridhijo img {
@@ -104,18 +107,20 @@ footer {
 
 
 .gridpadremultimedia {
-display: grid;
-grid: template columns 1fr 1fr ;
-row-gap: 50px;
-object-fit: cover;
-grid-template-areas:
-"foto video"
-"foto video"}
+  display: grid;
+  grid: template columns 1fr 1fr;
+  row-gap: 50px;
+  object-fit: cover;
+  grid-template-areas:
+    "foto video"
+    "foto video"
+}
 
-.imagenesmultimedia{
+.imagenesmultimedia {
   grid-area: foto;
 }
-.video{
-  grid-area: video;}
 
- /* transiciones */
+.video {
+  grid-area: video;
+}
+ 
