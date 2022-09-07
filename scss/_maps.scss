@@ -1,4 +1,4 @@
-$estilo: (color: blue, tamfuente: 30px);
+$estilo: (color: rgb(209, 225, 228), tamfuente: 30px);
 
 .contenedor {
     background-color: map-get($estilo, color );
