@@ -1,0 +1,5 @@
+$estilo: (color: blue, tamfuente: 30px);
+
+.contenedor {
+    background-color: map-get($estilo, color );
+}

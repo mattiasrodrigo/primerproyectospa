@@ -2,6 +2,9 @@
 @import "variables";
 @import "header";
 @import"main";
+@import"maps";
+@import"extend";
+@import"mixin";
 
 body {
   font-size: 20px;
@@ -18,5 +21,6 @@ flex-direction: column;
 row-gap: 10px;
 width: 400px;
 ;justify-content: center;
+text-align: center;
 }
 

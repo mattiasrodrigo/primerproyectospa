@@ -1,0 +1,7 @@
+@mixin parrafo {
+    text-align: center;
+}
+
+.contenedor {
+    @include parrafo;
+}
