@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Noto+Sans+KR:wght@100&family=Raleway:wght@200&family=Square+Peg&display=swap");
+@import "variables";
+@import "header";
+@import"main";
+
+body {
+  font-size: 20px;
+  margin: 0%;
+  background-color: cornsilk;
+}
+
+footer {
+  text-align: center;
+
+}
+form {display: flex;
+flex-direction: column;
+row-gap: 10px;
+width: 400px;
+;justify-content: center;
+}
+

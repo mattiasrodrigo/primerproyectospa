@@ -1,126 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Noto+Sans+KR:wght@100&family=Raleway:wght@200&family=Square+Peg&display=swap");
-
-
-body {
-  font-size: 20px;
-  margin: 0%;
-  background-color: cornsilk;
-}
-
 header {
   background-image: url(../img/relaxing-tropical-beach-white-sand-stack-stones-background-banner-relaxing-tropical-beach-white-181543784.jpg);
   background-size: cover;
   padding: 25px;
-  height: 200px;
-}
-
-.navbar {
-  background-color: transparent;
-}
-
-.nav-link {
-  display: flex;
-  ;
-  width: 200px;
-}
-
-nav a {
-  padding-right: 80px;
-  margin: -10px;
-}
-
-a {
-  color: orangered;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: bolder;
-}
-
-.menu {
-  display: flex;
-}
+  height: 200px; }
+  header nav a {
+    padding-right: 80px;
+    margin: -10px; }
+  header .navbar {
+    background-color: transparent; }
+  header .nav-link {
+    display: flex;
+    width: 200px; }
+  header a {
+    color: orangered;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder; }
 
 li {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 .foto {
-  border-radius: 80%;
-}
+  border-radius: 80%; }
 
 h1 {
-  color: rgb(240, 186, 39);
+  color: #f0ba27;
   text-align: center;
   font-family: "Square Peg", cursive;
   font-size: 70px;
-  margin: 20px;
-}
+  margin: 20px; }
 
 main {
   text-align: center;
   padding: 50px;
-}
-
-main p {
-  color: rgb(202, 135, 11);
-}
+  width: 1400px;
+  height: 1500px; }
+  main p {
+    color: #ca870b; }
 
 .contenedor {
   border: 2px black solid;
   margin: 10px;
-  padding: 10px;
-}
-
-footer {
-  text-align: center;
-}
-
+  padding: 10px; }
 
 .gridhijo img {
   display: flex;
   padding: 1rem;
   justify-items: center;
-  justify-content: center;
-
-}
+  justify-content: center; }
 
 .gridpadre .gridhijo :hover {
   height: 200px;
   width: 150px;
   top: 50px;
   transition: all 2s;
-  background-position-x: cente;
-}
+  background-position-x: cente; }
 
 .gridhijo img {
   border: 1px solid;
-
-
-
   height: 10rem;
-
   width: 8rem;
-
-  object-fit: cover;
-
-}
-
+  object-fit: cover; }
 
 .gridpadremultimedia {
   display: grid;
   grid: template columns 1fr 1fr;
   row-gap: 50px;
   object-fit: cover;
-  grid-template-areas:
-    "foto video"
-    "foto video"
-}
+  grid-template-areas: "foto video" "foto video"; }
 
 .imagenesmultimedia {
-  grid-area: foto;
-}
+  grid-area: foto; }
 
 .video {
-  grid-area: video;
-}
- 
+  grid-area: video; }
+
+body {
+  font-size: 20px;
+  margin: 0%;
+  background-color: cornsilk; }
+
+footer {
+  text-align: center; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 400px;
+  justify-content: center; }
