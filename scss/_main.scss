@@ -1,68 +1,127 @@
-  li {
-    list-style-type: none;
+li {
+  list-style-type: none;
+}
+.foto {
+  border-radius: 80%;
+  text-align: center;
+}
+
+h1 {
+  color: $color-principal;
+  text-align: $alineacion;
+  font-family: "Square Peg", cursive;
+  font-size: 70px;
+  margin: $margin;
+  padding: 0%;
+}
+main {
+  text-align: center;
+  padding: auto;
+  width: 100%;
+  height: 1300px;
+  background-color: rgb(236, 231, 217);
+
+  p {
+    color: rgb(207, 184, 85);
   }
-  .foto {
-    border-radius: 80%;
-  }
-  
-  h1 {
-    color: $color-principal;
-    text-align: $alineacion;
-    font-family: "Square Peg", cursive;
-    font-size: 70px;
-    margin: $margin;
-  }
-  
-  main {
-    text-align: center;
-    padding: 50px;
-    width: 1400px;
-    height: 1500px;
-  
-    p {
-      color: rgb(202, 135, 11);
-    }
-  }
-  
-  .contenedor {
-    border: 2px black solid;
-    margin: 10px;
-    padding: 10px;
-  }
-  .gridhijo img {
-    display: flex;
-    padding: 1rem;
-    justify-items: center;
-    justify-content: center;
-  }
-  
-  .gridpadre .gridhijo :hover {
-    height: 200px;
-    width: 150px;
-    top: 50px;
-    transition: all 2s;
-    background-position-x: cente;
-  }
-  
-  .gridhijo img {
-    border: 1px solid;
-    height: 10rem;
-    width: 8rem;
-    object-fit: cover;
-  }
-  
+}
+
+.cajagrid {
+  display: grid;
+  width: auto;
+  grid-template-areas:
+    "foto"
+    "lista";
+  grid-template-rows: 400px 500px;
+  grid-template-columns: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+
+.foto {
+  grid-area: foto;
+  height: 300px;
+  padding-top: 10px;
+}
+.lista {
+  grid-area: lista;
+  height: 700px;
+  text-align: center;
+}
+.d-block {
+  width: 100%;
+  height: auto;
+}
+
+.quienessomos {
+  padding-top: 150px;
+}
+
+//pagina ubicacion
+
+.ubicacion {
+  padding-top: 150px;
+}
+
+//pagina contacto//
+
+.contacto {
+  padding-top: 150px;
+  text-align: center;
+}
+
+//pagina multimedia//
+
+.gridpadremultimedia {
+  display: grid;
+  grid: template columns 1fr 1fr;
+  padding-top: 200px;
+  row-gap: 50px;
+  object-fit: cover;
+  grid-template-areas: "foto video" "foto video";
+}
+
+.imagenesmultimedia { 
+  display: flex;
+  flex-direction: column;
+
+  grid-area: foto;
+  width: 100%;
+}
+
+.video {
+  grid-area: video;
+  width: max-content;
+}
+
+@media (min-width:468px) and (max-width:730px) {
   .gridpadremultimedia {
     display: grid;
-    grid: template columns 1fr 1fr;
+    grid: template columns 1fr 100%;
+    padding-top: 200px;
     row-gap: 50px;
     object-fit: cover;
-    grid-template-areas: "foto video" "foto video";
+    grid-template-areas: "foto" "video";
+    
+  }
+
+
+}
+
+@media(max-width:467px) { 
+  .gridpadremultimedia {
+    display: grid;
+    grid: template columns 1fr 100%;
+    padding-top: 200px;
+    row-gap: 50px;
+    object-fit: cover;
+    grid-template-areas: "foto" "video";
+    
   }
   
-  .imagenesmultimedia {
-    grid-area: foto;
-  }
-  
-  .video {
-    grid-area: video;
-  }
+  .body {
+    width: 200%
+  };
+
+}
+

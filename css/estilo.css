@@ -1,83 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Noto+Sans+KR:wght@100&family=Raleway:wght@200&family=Square+Peg&display=swap");
 header {
-  background-image: url(../img/relaxing-tropical-beach-white-sand-stack-stones-background-banner-relaxing-tropical-beach-white-181543784.jpg);
+  background-color: #dacbb0;
   background-size: cover;
+  background-position: center;
   padding: 25px;
-  height: 200px; }
-  header nav a {
-    padding-right: 80px;
-    margin: -10px; }
-  header .navbar {
-    background-color: transparent; }
-  header .nav-link {
-    display: flex;
-    width: 200px; }
-  header a {
-    color: orangered;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-weight: bolder; }
+  height: 100px;
+  width: 100%;
+  align-items: center; }
+  header .grow:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3); }
+  header .navbar-nav a {
+    text-align: center; }
+
+nav a {
+  padding-right: 80px;
+  margin: -10px; }
+
+.navbar {
+  background-color: transparent; }
+
+.icon {
+  text-align: center;
+  color: #f1dca9; }
+
+.nav-link {
+  display: flex;
+  width: 200px; }
+
+a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder; }
 
 li {
   list-style-type: none; }
 
 .foto {
-  border-radius: 80%; }
+  border-radius: 80%;
+  text-align: center; }
 
 h1 {
   color: #f0ba27;
   text-align: center;
   font-family: "Square Peg", cursive;
   font-size: 70px;
-  margin: 20px; }
+  margin: 0px;
+  padding: 0%; }
 
 main {
   text-align: center;
-  padding: 50px;
-  width: 1400px;
-  height: 1500px; }
+  padding: auto;
+  width: 100%;
+  height: 1300px;
+  background-color: #ece7d9; }
   main p {
-    color: #ca870b; }
+    color: #cfb855; }
 
-.contenedor, .navbar-nav {
-  border: 2px black solid;
-  margin: 10px;
-  padding: 10px; }
+.cajagrid {
+  display: grid;
+  width: auto;
+  grid-template-areas: "foto" "lista";
+  grid-template-rows: 400px 500px;
+  grid-template-columns: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px; }
 
-.gridhijo img {
-  display: flex;
-  padding: 1rem;
-  justify-items: center;
-  justify-content: center; }
+.foto {
+  grid-area: foto;
+  height: 300px;
+  padding-top: 10px; }
 
-.gridpadre .gridhijo :hover {
-  height: 200px;
-  width: 150px;
-  top: 50px;
-  transition: all 2s;
-  background-position-x: cente; }
+.lista {
+  grid-area: lista;
+  height: 700px;
+  text-align: center; }
 
-.gridhijo img {
-  border: 1px solid;
-  height: 10rem;
-  width: 8rem;
-  object-fit: cover; }
+.d-block {
+  width: 100%;
+  height: auto; }
+
+.quienessomos {
+  padding-top: 150px; }
+
+.ubicacion {
+  padding-top: 150px; }
+
+.contacto {
+  padding-top: 150px;
+  text-align: center; }
 
 .gridpadremultimedia {
   display: grid;
   grid: template columns 1fr 1fr;
+  padding-top: 200px;
   row-gap: 50px;
   object-fit: cover;
   grid-template-areas: "foto video" "foto video"; }
 
 .imagenesmultimedia {
-  grid-area: foto; }
+  display: flex;
+  flex-direction: column;
+  grid-area: foto;
+  width: 100%; }
 
 .video {
-  grid-area: video; }
+  grid-area: video;
+  width: max-content; }
 
-.contenedor, .navbar-nav {
-  background-color: #d1e1e4; }
+@media (min-width: 468px) and (max-width: 730px) {
+  .gridpadremultimedia {
+    display: grid;
+    grid: template columns 1fr 100%;
+    padding-top: 200px;
+    row-gap: 50px;
+    object-fit: cover;
+    grid-template-areas: "foto" "video"; } }
+
+@media (max-width: 467px) {
+  .gridpadremultimedia {
+    display: grid;
+    grid: template columns 1fr 100%;
+    padding-top: 200px;
+    row-gap: 50px;
+    object-fit: cover;
+    grid-template-areas: "foto" "video"; }
+  .body {
+    width: 200%; } }
 
 .contenedor, .navbar-nav {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -87,10 +137,12 @@ main {
 .contenedor, .navbar-nav {
   text-align: center; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  font-size: 20px;
-  margin: 0%;
-  background-color: cornsilk; }
+  width: auto; }
 
 footer {
   text-align: center; }
@@ -99,6 +151,6 @@ form {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  width: 400px;
+  width: auto;
   justify-content: center;
   text-align: center; }
